@@ -1,1 +1,1 @@
-# Junior Front-end Ddeveloper course
+# Junior Frontend Developer course
