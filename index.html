@@ -1,12 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Страница с формой</title>
 </head>
 <body>
-    <div>
-        Hello world
+<h1>Вакансия: Junior Frontend Developer</h1>
+<div style="overflow: auto">
+    <div style="display: inline-block; width: 25%; float: left">
+        <img src="assets/img/pepe.jpg" alt="фото претендента" width="250px">
     </div>
+    <div style="display: inline-block; width: 50%; float: left">
+        <p>Имя: Илья</p>
+        <p><a href="github.com">Ссылка на гитхаб</a></p>
+        <p>Опыт работы: 1 год</p>
+    </div>
+</div>
+<div>
+    <form action="" style="display: block; margin-top:10px">
+        <div>
+            <label for="date-interview">Дата собеседования</label>
+            <input type="date" name="date-interview" id="date-interview" >
+        </div>
+        <div style="margin-top: 10px">
+            Уровень английского:
+            <br>
+            <input type="radio" name="english-level" id="english-level-2" value="2"><label for="english-level-2">Плохо</label>
+            <input type="radio" name="english-level" id="english-level-3" value="3"><label for="english-level-3">Средне</label>
+            <input type="radio" name="english-level" id="english-level-4" value="4"><label for="english-level-4">Хорошо</label>
+            <input type="radio" name="english-level" id="english-level-5" value="5"><label for="english-level-5">Превосходно</label>
+        </div>
+        <div style="margin-top: 10px">
+            Ключевые навыки
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" name="skill" placeholder="введите навык...">
+            <button>Добавить в список</button>
+        </div>
+        <div style="margin-top: 10px">
+            <label for="communication">Коммуникабельность:</label>
+            <select name="communication" id="communication">
+                <option value="" disabled selected>Выберите значение</option>
+                <option value="3">Средне</option>
+                <option value="4">Хорошо</option>
+                <option value="5">Превосходно</option>
+            </select>
+        </div>
+        <div style="margin-top: 10px">
+            <label for="salary">Желаемая з\п</label>
+            <input type="number" name="salary" id="salary" placeholder="введите значение...">
+        </div>
+        <div style="margin-top: 10px">
+            Подходит по критериям:
+            <br>
+            <input type="checkbox" name="cr-english" id="cr-english"><label for="cr-english">Знание английского</label>
+            <input type="checkbox" name="cr-salary" id="cr-salary"><label for="cr-salary">Оклад</label>
+            <input type="checkbox" name="cr-skills" id="cr-skills"><label for="cr-skills">Навыки</label>
+            <input type="checkbox" name="cr-nice-gay" id="cr-nice-gay"><label for="cr-nice-gay">Сразу видно, что свой человек</label>
+        </div>
+    </form>
+    <p>Образование, курсы и тд</p>
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>Сроки обучения</th>
+            <th>Наименование учебного заведения, курсов</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>
