@@ -7,6 +7,20 @@ div#main {
     transform: translateX(-50%);
 }
 
+h1 {
+    color: #4B296B;
+}
+
+.head {
+    font-weight: bold;
+    font-size: 16pt;
+    color: #4B296B;
+}
+
+th {
+    color: #4B296B;
+}
+
 div.two-inline-blocks {
     display: inline-block;
     width: 49%;
@@ -39,14 +53,28 @@ tr:not(.label):hover {
 
 select {
     background: #badeae;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
 }
 
 button {
     background: #badeae;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 2px;
+    background: radial-gradient(white, #84de82);
+    cursor: pointer;
 }
 
 input {
     background: #badeae;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
 }
 
 input[type='radio']:after {
@@ -63,16 +91,7 @@ input[type='radio']:after {
 }
 
 input[type='radio']:checked:after {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    left: -1px;
-    position: relative;
     background-color: #FF8673;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
 }
 
 input[type='checkbox']:after {
@@ -88,16 +107,10 @@ input[type='checkbox']:after {
 }
 
 input[type='checkbox']:checked:after {
-    width: 10px;
-    height: 10px;
-    left: -1px;
-    position: relative;
     background-color: #FF8673;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
 }
+
+
 
 
 
