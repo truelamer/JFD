@@ -77,6 +77,10 @@ input {
     cursor: pointer;
 }
 
+input:focus {
+    outline: none;
+}
+
 input[type='radio']:after {
      width: 10px;
      height: 10px;
